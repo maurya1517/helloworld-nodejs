@@ -4,7 +4,7 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: '2'))
     skipDefaultCheckout true
   }
-   triggers {
+  triggers {
     eventTrigger simpleMatch('hello-api-eli')
   }
   stages {
